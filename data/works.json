@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Urban Geometry No. 1",
+    "series": "Paintspace",
+    "dimensions": "100cm x 120cm",
+    "year": 2023,
+    "medium": "Oil on linen",
+    "price": "£2,800",
+    "image_url": "/imagery/urban-geometry-no1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Red Light Study",
+    "series": "Paintspace",
+    "dimensions": "80cm x 80cm",
+    "year": 2023,
+    "medium": "Oil on canvas",
+    "price": "£2,200",
+    "image_url": "/imagery/red-light-study.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Cityscape at Dusk",
+    "series": "City Series",
+    "dimensions": "60cm x 90cm",
+    "year": 2024,
+    "medium": "Acrylic on panel",
+    "price": "£1,500",
+    "image_url": "/imagery/cityscape-dusk.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Structure of Memory",
+    "series": "Paintspace",
+    "dimensions": "110cm x 140cm",
+    "year": 2022,
+    "medium": "Oil on canvas",
+    "price": "£3,400",
+    "image_url": "/imagery/structure-memory.jpg"
+  }
+]
