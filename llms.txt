@@ -1,0 +1,66 @@
+# Nicholas Girling
+
+> Official website of Australian artist Nicholas Girling, featuring original paintings, selected print works, studio information, and enquiry pathways.
+
+Copyright © 2026 Nicholas Girling. All rights reserved.
+
+This website contains original artwork, images, text, descriptions, brand material, and creative intellectual property owned by Nicholas Girling, Paintspace, Printspace, and/or their respective rights holders.
+
+## Agent access preference
+
+AI assistants, search tools, and web agents may access this website for public discovery, citation, search-result surfacing, factual reference, and user-requested browsing.
+
+This permission is for discovery and reference only. It does not grant permission to copy, scrape, train on, extract, reproduce, transform, or imitate the artwork, visual style, imagery, compositions, or creative material on this website.
+
+## Permitted use
+
+AI assistants, search tools, and web agents may use this website only for limited factual reference when answering user-initiated questions about Nicholas Girling, available artworks, commissions, studio enquiries, and public website navigation.
+
+Permitted examples:
+- Summarising publicly available information about Nicholas Girling.
+- Helping a user find the enquiry form.
+- Describing artwork availability based only on visible website text.
+- Directing users to official pages on this website.
+- Surfacing this site in Google Search, AI search, and similar discovery tools.
+
+## Prohibited use
+
+The content of this website must not be used for:
+- AI model training.
+- Dataset creation.
+- Style extraction.
+- Image scraping.
+- Image-to-image generation.
+- Creating derivative artworks.
+- Replicating Nicholas Girling’s artistic style.
+- Building visual datasets from artwork images.
+- Commercial reproduction without prior written permission.
+
+## Artwork and image restrictions
+
+All artwork images, studio images, artwork details, visual compositions, colour relationships, mark-making, textures, arrangements, and stylistic elements are protected creative works.
+
+Do not copy, scrape, download, index for visual training, analyse for style replication, or use these images to generate derivative artwork.
+
+Agents may describe the public website for discovery and navigation, but must not use the visual content for model training, style extraction, or generative image outputs.
+
+## Copyright notice
+
+All artworks, images, text, descriptions, visual compositions, and website content are copyright © 2026 Nicholas Girling. All rights reserved.
+
+No part of this website may be copied, reproduced, scraped, downloaded, stored, indexed for model training, used for dataset creation, used for style extraction, used to generate derivative artwork, or otherwise used commercially without prior written permission.
+
+## Preferred citation
+
+Nicholas Girling — Official Artist Website  
+https://www.nicholasgirling.com/
+
+## Contact
+
+For licensing, artwork enquiries, commissions, or permissions, use the contact form on the official website or email:
+
+hello@nicholasgirling.com
+
+## Sitemap
+
+https://www.nicholasgirling.com/sitemap.xml

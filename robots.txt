@@ -1,0 +1,91 @@
+# Nicholas Girling / Paintspace / Printspace
+# Copyright © 2026 Nicholas Girling. All rights reserved.
+#
+# This site contains original artwork, photography, imagery, text, and creative intellectual property.
+#
+# Search and discovery:
+# Standard search engine crawling and indexing is permitted so the public website can appear in Google Search,
+# AI-assisted search, and other discovery tools.
+#
+# Restriction:
+# Artwork images, studio images, visual compositions, and stylistic material must not be used for AI model training,
+# dataset creation, image scraping, style extraction, image-to-image generation, or derivative artwork generation.
+
+# Block known AI training and dataset crawlers where they identify themselves.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# Allow search, discovery, user-requested browsing, and AI search/reference agents.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nicholasgirling.com/sitemap.xml
