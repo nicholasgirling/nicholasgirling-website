@@ -771,6 +771,52 @@ p { margin-bottom: 1rem; }
   transform: rotate(-135deg) translateY(5px);
 }
 
+.form-group--optin {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label.optin-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.82rem;
+  margin-bottom: 0;
+  color: var(--stone);
+}
+
+.optin-label input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: 0.15rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.optin-label input[type="checkbox"]:checked {
+  background: var(--ink);
+  border-color: var(--ink);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5l2.5 2.5L8 3' stroke='%23fff' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.optin-label span {
+  font-size: 0.82rem;
+  color: var(--stone);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 .form-honeypot {
   position: absolute;
   left: -9999px;
@@ -1241,7 +1287,7 @@ a.artwork-card {
 
 .artwork-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
   gap: 4.5rem;
   align-items: start;
   padding-top: 4rem;
@@ -1252,19 +1298,96 @@ a.artwork-card {
 .artwork-media-col {
   position: sticky;
   top: calc(58px + 44px + 2rem);
+  min-width: 0;
+}
+
+.artwork-gallery {
+  width: 100%;
 }
 
 .artwork-main-image-wrapper {
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
-  background: var(--parchment);
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: #ffffff;
+  cursor: zoom-in;
 }
 
 .artwork-main-image {
   width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  object-position: center;
+}
+
+.artwork-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.artwork-thumbnail {
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: 1px solid rgba(28, 28, 26, 0.16);
+  background: var(--parchment);
+  cursor: pointer;
+  opacity: 0.72;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.artwork-thumbnail:hover,
+.artwork-thumbnail.is-active {
+  opacity: 1;
+  border-color: rgba(28, 28, 26, 0.55);
+}
+
+.artwork-thumbnail img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+}
+
+.artwork-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(246, 245, 243, 0.96);
+}
+
+.artwork-lightbox.is-open {
+  display: flex;
+}
+
+.artwork-lightbox img {
+  max-width: min(96vw, 1500px);
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.artwork-lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  z-index: 10000;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 /* ─── Info column ────────────────────────────────────────────────────────── */
@@ -1576,7 +1699,20 @@ details[open] .accordion-body {
 
   .artwork-media-col { position: static; }
 
-  .artwork-main-image-wrapper { aspect-ratio: 1 / 1; }
+  .artwork-main-image {
+    max-height: none;
+  }
+
+  .artwork-thumbnails {
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .artwork-thumbnail {
+    flex: 0 0 72px;
+    width: 72px;
+    height: 72px;
+  }
 
   .series-nav-track {
     grid-template-columns: 1fr 1fr;
@@ -1601,4 +1737,24 @@ details[open] .accordion-body {
 @media (prefers-reduced-motion: reduce) {
   .artwork-body .accordion-body { transition: none; }
   .accordion-icon::before, .accordion-icon::after { transition: none; }
+}
+
+.gallery-grid > .artwork-card-feature {
+  grid-column: span 2;
+}
+
+.artwork-card-feature .artwork-image-wrapper {
+  aspect-ratio: 16 / 10;
+  background: #ffffff;
+}
+
+.artwork-card-feature .artwork-image {
+  object-fit: contain;
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid > .artwork-card-feature {
+    grid-column: span 1;
+  }
 }
