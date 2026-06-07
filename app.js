@@ -11,7 +11,7 @@
     '<div class="container">',
     '  <div class="footer-content">',
     '    <div class="footer-brand">',
-    '      <h3>Nicholas Girling</h3>',
+    '      <h3>Nicholas Girling Artist - Melbourne Australia</h3>',
     '      <p>Original Paintings · Paintspace · Printspace</p>',
     '      <p>self represented &amp; co-Founder of printspace</p>',
     '      <p>ABN 76 181 584 319</p>',
