@@ -40,12 +40,23 @@
 
       <!-- Left: image -->
       <div class="artwork-media-col">
-        <div class="artwork-main-image-wrapper">
-          <img
-            src="../imagery/little-river-blue-print.jpg"
-            alt="River Series Study — Nicholas Girling, acrylic on canvas, 120 × 100 cm"
-            class="artwork-main-image"
-          >
+        <div class="artwork-gallery" data-artwork-gallery>
+
+          <button class="artwork-main-image-wrapper" type="button" aria-label="View artwork larger" data-artwork-lightbox-trigger>
+            <img
+              src="../imagery/little-river-blue-print.jpg"
+              alt="River Series Study — Nicholas Girling, art print on cotton-rag, 110 × 110 cm"
+              class="artwork-main-image"
+              data-artwork-main-image
+            >
+          </button>
+
+          <div class="artwork-thumbnails" aria-label="Artwork image thumbnails">
+            <button class="artwork-thumbnail is-active" type="button" data-artwork-thumbnail data-large="../imagery/little-river-blue-print.jpg" data-alt="River Series Study — full artwork view">
+              <img src="../imagery/little-river-blue-print.jpg" alt="Thumbnail of River Series Study full artwork view">
+            </button>
+          </div>
+
         </div>
       </div>
 
@@ -134,41 +145,18 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Nicholas Girling</h3>
-          <p>Original Paintings · Paintspace · Printspace</p>
-        </div>
-        <div class="footer-col">
-          <span class="footer-col-title">Navigation</span>
-          <nav class="footer-links">
-            <a href="../index.html">Home</a>
-            <a href="../index.html#paintings">Original Paintings</a>
-            <a href="../index.html#city-series">City Series</a>
-            <a href="../index.html#commissions">Commissions</a>
-            <a href="../index.html#contact">Contact</a>
-          </nav>
-        </div>
-        <div class="footer-col">
-          <span class="footer-col-title">Follow</span>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/nicholasgirling" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.facebook.com/printspace" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; <span id="year"></span> Nicholas Girling. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <footer class="site-footer"></footer>
 
   <script>window.ARTWORK_SLUG = 'river-series-study';</script>
   <script src="series-data.js"></script>
   <script src="artwork.js"></script>
   <script src="../app.js"></script>
+  <script src="artwork-gallery.js"></script>
+
+  <div class="artwork-lightbox" data-artwork-lightbox aria-hidden="true">
+          <button class="artwork-lightbox-close" data-artwork-lightbox-close type="button" aria-label="Close larger artwork view">×</button>
+          <img src="../imagery/little-river-blue-print.jpg" alt="River Series Study — larger artwork view" data-artwork-lightbox-image>
+        </div>
 
 </body>
 </html>

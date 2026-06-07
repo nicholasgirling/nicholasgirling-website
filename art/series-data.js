@@ -10,8 +10,8 @@ var SERIES_DATA = [
     artworks: [
       {
         slug: 'painting-1',
-        title: 'Acrylic Painting No. 1',
-        image: '../imagery/framed-painting3.jpg'
+        title: 'The Rumbling',
+        image: '../imagery/the-rumbling.jpg'
       },
       {
         slug: 'painting-2',
@@ -22,6 +22,36 @@ var SERIES_DATA = [
         slug: 'painting-3',
         title: 'Acrylic Painting No. 3',
         image: '../imagery/framed-painting2.jpg'
+      },
+      {
+        slug: 'the-hills-are-alive',
+        title: 'The Hills are Alive',
+        image: '../imagery/the-hills-are-alive.jpg'
+      },
+      {
+        slug: 'painting-7',
+        title: 'Painting No. 7',
+        image: '../imagery/nick-painting7.jpg'
+      },
+      {
+        slug: 'bright-and-early',
+        title: 'Bright & Early',
+        image: '../imagery/bright-and-early.jpg'
+      },
+      {
+        slug: 'pony-ride',
+        title: 'Pony Ride',
+        image: '../imagery/pony-ride.jpg'
+      },
+      {
+        slug: 'safe-landing',
+        title: 'Safe Landing',
+        image: '../imagery/safe-landing.jpg'
+      },
+      {
+        slug: 'guacamole',
+        title: 'Guacamole',
+        image: '../imagery/Guacamole.jpg'
       }
     ]
   },
