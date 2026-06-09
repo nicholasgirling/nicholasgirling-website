@@ -8,7 +8,7 @@
   if (navList) {
     navList.innerHTML = [
       '<li><a href="' + b + 'index.html">Home</a></li>',
-      '<li><a href="' + b + 'available-paintings-on-canvas.html">Original Paintings</a></li>',
+      '<li><a href="' + b + 'index.html#paintings">Originals</a></li>',
       '<li><a href="' + b + 'prints-painterly.html">Prints Painterly</a></li>',
       '<li><a href="' + b + 'index.html#city-series">City Series</a></li>',
       '<li><a href="' + b + 'index.html#commissions">Commissions</a></li>',
