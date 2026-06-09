@@ -8,7 +8,7 @@
   if (navList) {
     navList.innerHTML = [
       '<li><a href="' + b + 'index.html">Home</a></li>',
-      '<li><a href="' + b + 'paintings.html">Original Paintings</a></li>',
+      '<li><a href="' + b + 'available-paintings-on-canvas.html">Original Paintings</a></li>',
       '<li><a href="' + b + 'prints-painterly.html">Prints Painterly</a></li>',
       '<li><a href="' + b + 'index.html#city-series">City Series</a></li>',
       '<li><a href="' + b + 'index.html#commissions">Commissions</a></li>',
@@ -49,10 +49,9 @@
     '    <div class="footer-col">',
     '      <span class="footer-col-title">Collection</span>',
     '      <nav class="footer-links">',
-    '        <a href="' + b + 'paintings.html">Original Paintings</a>',
+    '        <a href="' + b + 'available-paintings-on-canvas.html">Original Paintings</a>',
     '        <a href="' + b + 'prints-painterly.html">Prints Painterly</a>',
-    '        <a href="' + b + 'prints-cities.html">Prints Cities</a>',
-    '        <a href="' + b + 'prints-graphic.html">Prints Graphic</a>',
+    '        <a href="' + b + 'index.html#city-series">City Series</a>',
     '      </nav>',
     '    </div>',
 
