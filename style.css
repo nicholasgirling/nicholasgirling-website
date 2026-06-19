@@ -495,7 +495,8 @@ p { margin-bottom: 1rem; }
   font-size: 0.78rem;
   color: var(--stone);
   margin: 0;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 /* ─── Commission ─────────────────────────────────────────────────────────── */
@@ -1977,4 +1978,94 @@ details[open] .accordion-body {
   .promo-banner { height: 45vh; }
   .promo-divider { min-height: 280px; }
   .promo-cell--wide { aspect-ratio: 4 / 3; }
+}
+
+
+/* ─── Mobile nav — white dropdown (site-wide) ───────────────────────────── */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    z-index: 150;
+    border-top: 1px solid var(--border);
+    box-shadow: 0 6px 24px rgba(28, 28, 26, 0.10);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 1.4rem;
+    color: var(--ink) !important;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    background: var(--cream);
+    color: var(--charcoal) !important;
+  }
+
+  .nav-links a::after { display: none !important; }
+
+  /* CTA pill — flat in dropdown */
+  .nav-links .cta-btn {
+    border: none !important;
+    background: none !important;
+    color: var(--gold) !important;
+    padding: 1rem 1.4rem !important;
+  }
+
+  /* X icon: dark on solid-background headers (artwork pages + scrolled home) */
+  .artwork-body .mobile-menu-toggle.open span:nth-child(1),
+  .site-header.scrolled .mobile-menu-toggle.open span:nth-child(1) { background: var(--ink); }
+  .artwork-body .mobile-menu-toggle.open span:nth-child(3),
+  .site-header.scrolled .mobile-menu-toggle.open span:nth-child(3) { background: var(--ink); }
+}
+
+
+/* ─── Promo card — image + caption, like artwork-card on prints page ─────── */
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card .promo-cell {
+  flex: 1 0 auto;
+}
+
+.promo-card-info {
+  background: #ffffff;
+  padding: 0.8rem 1rem 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.promo-card-info p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--stone);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Mobile: collapse all card spans to single column */
+@media (max-width: 768px) {
+  .gallery-grid--dense .promo-card {
+    grid-column: 1 !important;
+  }
 }

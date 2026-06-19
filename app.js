@@ -29,7 +29,8 @@
     '  <div class="footer-content">',
 
     '    <div class="footer-brand">',
-    '      <h3>Nicholas Girling Artist - Melbourne Australia</h3>',
+    '      <h3>Nicholas Girling</h3>',
+    '      <p>Melbourne, Australia</p>',
     '      <p>Original Paintings · Paintspace · Printspace</p>',
     '      <p>self represented &amp; co-Founder of printspace</p>',
     '      <p>ABN 76 181 584 319</p>',
@@ -101,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const open = navLinks.classList.toggle('active');
       menuToggle.classList.toggle('open', open);
       menuToggle.setAttribute('aria-expanded', String(open));
-      document.body.style.overflow = open ? 'hidden' : '';
     });
 
     navLinks.querySelectorAll('a').forEach(function (link) {
@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.remove('active');
         menuToggle.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
       });
     });
   }
