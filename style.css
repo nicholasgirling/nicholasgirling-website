@@ -1878,6 +1878,9 @@ details[open] .accordion-body {
   margin: 5rem 0 0;
 }
 
+.promo-divider--river { background-position: 50% 90%; }
+@media (max-width: 768px) { .promo-divider--river { background-position: 50% 30%; } }
+
 .promo-divider-veil {
   position: absolute;
   inset: 0;
