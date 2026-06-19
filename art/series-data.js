@@ -52,6 +52,16 @@ var SERIES_DATA = [
         slug: 'guacamole',
         title: 'Guacamole',
         image: '../imagery/Guacamole.jpg'
+      },
+      {
+        slug: 'misc-blue',
+        title: 'Misc Blue',
+        image: '../imagery/misc-blue-nicholas-girling-1440.jpg'
+      },
+      {
+        slug: 'misc-green',
+        title: 'Misc Green',
+        image: '../imagery/misc-green-nicholas-girling-1440.jpg'
       }
     ]
   },
